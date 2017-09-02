@@ -8,3 +8,4 @@ exports.add = function (klasses) {
     klass.add(teacherName,students)
   })
 }
+
