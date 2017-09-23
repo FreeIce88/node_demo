@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+var p = new Promise(function(resolve,reject){
+  setTimeout(function () {
+    console.log('执行完成');
+    resolve(
+      test()
+    )
+  },3000)
+});
+
+function test() {
+
+  setTimeout(function () {
+    console.log('AAAAAA')
+    alert('hello')
+  },1000)
+}
+</script>
+</body>
+</html>
